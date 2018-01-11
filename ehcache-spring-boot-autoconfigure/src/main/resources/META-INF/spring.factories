@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.lhy.boot.autoconfigure.cache.EhCacheCacheConfiguration
