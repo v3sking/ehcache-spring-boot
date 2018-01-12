@@ -77,7 +77,7 @@ public class EhCacheProperties {
 				private int timeToLive = 32;
 
 				/**
-				 * 缓存提供者广播组地址 默认：224.1.1.1
+				 * 缓存提供者广播组地址 D 类 IP 地址，范围从 224.0.1.0 到 238.255.255.255 默认：224.1.1.1
 				 */
 				private String multicastGroupAddress = DEFAULT_MULTICAST_GROUP_IP;
 
@@ -120,7 +120,7 @@ public class EhCacheProperties {
 			private String hostName = RESERVED_ADDRESS;
 
 			/**
-			 * 缓存监听者默认端口 默认：127.0.0.1
+			 * 缓存监听者默认端口 默认：40002
 			 */
 			private int port = DEFAULT_LISTENER_PORT;
 
@@ -184,7 +184,7 @@ public class EhCacheProperties {
 		 */
 		long timeToLiveSeconds = 0L;
 		/**
-		 * 如果内存中数据超过内存限制，是否要缓存到磁盘上。
+		 * 如果内存中数据超过内存限制，是否要缓存到磁盘上。默认false
 		 */
 		boolean overflowToDisk;
 		/**
